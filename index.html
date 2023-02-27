@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Scripts y links en el head para el uso de fuentes de textos e íconos para el menú y las redes sociales  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final: CV Web</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5551b9f5ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Creación del contenedor general junto con los navs correspondientes para distintos dispositivos y la portada -->
+    <main class="general-container">
+        <section id="left-container">
+            <nav class="menu-container">
+                <ul class="menu">
+                    <li><a id="sobreMi"><i class="fa-solid fa-address-card"></i></a></li>
+                    <li><a id="formacion"><i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
+                    <li><a id="experiencias"><i class="fa-solid fa-briefcase"></i></a></li>
+                    <li><a id="contacto"><i class="fa-regular fa-comment"></i></a></li>
+                </ul>
+            </nav>
+            <nav class="menu-container-small">
+                <ul class="menu">
+                    <li><a href="#portada-container" onclick="sonido.play()"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#sobreMi-container" onclick="sonido.play()"><i class="fa-solid fa-address-card"></i></a></li>
+                    <li><a href="#formacion-container" onclick="sonido.play()"><i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
+                    <li><a href="#experiencias-container" onclick="sonido.play()"><i class="fa-solid fa-briefcase"></i></a></li>
+                    <li><a href="#contacto-container" onclick="sonido.play()"><i class="fa-regular fa-comment"></i></a></li>
+                </ul>
+            </nav>
+            <div class="portada-container" id="portada-container">
+                <img src="Imágenes/imagen1.jpeg" alt="Foto de María Lara" class="foto-perfil">
+                <div class="mini-container">
+                    <h1 class="nombre-container">María Lara</h1>
+                    <ul class="redes-container">
+                        <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<!-- Creación del primer apartado con información de la persona -->
+        <section id="sobreMi-container">
+            <div class="info-container caja1">
+                <h2 class="titulo1">Sobre Mí</h2>
+                <p class="info">
+                    ¡Hola! me llamo María Lara.<br><br>
+                    Cuando realizo un trabajo doy lo mejor de mí. Busco formas de innovar y crear si se permite. <br>
+                    Soy rápida para solucionar inconvenientes que surjan y encontrar soluciones. <br>
+                    Soy sociable, lo que me permite trabajar en grupo tranquilamente, pero también me desenvuelvo muy bien trabajando sola. <br><br>
+                    En mis tiempos libres me gusta hacer manualidades y pintar.
+                </p>
+            </div>
+            <div class="info-container caja2">
+                <h3 class="titulo2">Datos Personales</h3>
+                <ul class="lista-de-labels">
+                    <li>Nombre completo:</li>
+                    <li>DNI:</li>
+                    <li>Edad:</li>
+                    <li>Fecha de nacimiento:</li>
+                    <li>Dirección:</li>
+                    <li>Disponibilidad:</li>
+                </ul>
+                <ul class="lista-de-datos">
+                    <li>María Irene Lara</li>
+                    <li>26.501.700</li>
+                    <li>44 años</li>
+                    <li>12/05/1978</li>
+                    <li>Avenida Flor del Pago 1034</li>
+                    <li id="disponibilidad">Vigente</li>
+                </ul>
+            </div>
+        </section>
+<!-- Creación del segundo apartado con los estudios y formación académica -->
+        <section id="formacion-container">
+            <div class="estudios-container caja1">
+                <h2 class="titulo1">Formación</h2>
+                <ul class="lista-estudios">
+                    <li><span>1990-1995:</span>   Inglés, título del "IMEI".</li>
+                    <li><span>1991-1995:</span>   Título de Bachiller - Teodoro Sánchez de Bustamante, "Nacional Nº1".</li>
+                    <li><span>2001-2003:</span>   Cursado de materias de 1° y 2° año de la carrera de Lic. en Administración de Empresas en la Facultad de Ciencias Económicas.</li>
+                </ul>
+            </div>
+            <div class="estudios-container caja2">
+                <h3 class="titulo2">Conocimientos</h3>
+                <div class="informatica-container">
+                    <h4 class="titulo3">Informática</h4>
+                    <ul class="lista-informatica">
+                        <li>Microsoft Word - Excel.</li>
+                        <li>Software Administrativo en "Manager 2".</li>
+                        <li>Gestión Administrativa Contable en "Litoral".</li>
+                    </ul>
+                </div>
+                <div class="idiomas-container">
+                    <h4 class="titulo3">Idiomas</h4>
+                    <ul class="lista-idiomas">
+                        <li>Inglés, nivel intermedio.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<!-- Creación del tercer apartado con la experiencia de trabajo -->
+        <section id="experiencias-container">
+            <div class="caja-grande">
+                <h2 class="titulo1">Experiencias Laborales</h2>
+                <ul class="lista-de-trabajos">
+                    <li><span>1996:</span>Promotora del supermercado "Comodín".</li>
+                    <li><span>1999:</span>Promotora de "La Colchonería".</li>
+                    <li><span>2001:</span>Taller de Mecánica Dental. Pasantía de 1 año.</li>
+                    <li><span>2002-2004:</span>Atención al cliente en panadería "Con-Tee".</li>
+                    <li><span>2004-2006:</span>Secretaria en "Estudio Contable Rene Barrionuevo".</li>
+                    <li><span>2006-2008:</span>Secretaria en "Estudio Echenique".</li>
+                    <li><span>2009-2015:</span>Secretaria en "Estudio del Ingeniero Julio Lamas".</li>
+                </ul>
+            </div>
+        </section>
+<!-- Creación del último apartado de contacto con la persona mediante un formulario -->
+        <section id="contacto-container">
+            <div class="caja-grande">
+                <p class="info">
+                    Dejame tu mensaje completando el formulario de abajo y te estaré contestando a la brevedad. <br><br>
+                    ¡Gracias por comunicarte!.
+                </p>
+                <form class="formulario">
+                    <input type="text" class="cajitas" placeholder="&#10154; tu nombre" required>
+                    <input type="email" class="cajitas" placeholder="✉ tu mail" required>
+                    <textarea class="cajita-msj" placeholder="✎ tu mensaje"></textarea required>
+                    <input type="submit" class="submit" value="✔ Enviar">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+<!-- Script para vincular el html al archivo javascript que lo complementa -->
+<script src="script.js"></script>
+
+</html>
+
+<!-- Fin del contenido html  -->
