@@ -15,7 +15,7 @@ let contactoContainer = document.getElementById("contacto-container");
 //Agregando un objeto de Audio para ser utilizado con el evento click en los íconos del menú 
 
 let sonido = new Audio();
-sonido.src = "/Proyecto Final Front End - CV Web/Sonidos/sound-7.mp3";
+sonido.src = "/Proyecto Final Front End - CV Web/sound-7.mp3";
 
 // Añadiendo los eventos mencionados
 
